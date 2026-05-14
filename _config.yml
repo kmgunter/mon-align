@@ -22,12 +22,11 @@ title: Alignment Benchmarking - Labphon 2026
 email: michael.e.mcauliffe@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This serves as the home for materials related to the 
-  Crowd-sourcing a benchmark for English forced alignment
-  workshop. 
-  LabPhon20 held in Montréal, Québec, Canada from June 25, 2026
-baseurl: "/about" # the subpath of your site, e.g. /blog
+  workshop "Crowd-sourcing a benchmark for English forced alignment"
+  LabPhon20, Montréal, Québec, Canada from June 25, 2026
+baseurl: "" # the subpath of your site, e.g. /blog
 domain: mon-align
-url: "https://kmgunter.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kmgunter.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
@@ -35,6 +34,11 @@ url: "https://kmgunter.github.io/" # the base hostname & protocol for your site,
 theme: minima
 plugins:
   - jekyll-feed
+collections:
+  workshop_materials:
+    output: true
+    permalink: /:collection/:name
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
